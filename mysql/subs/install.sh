@@ -1,5 +1,6 @@
 #!/bin/bash
 # Install MySQL
+sudo apt update
 sudo apt install mysql-server -y
 echo "Done installing"
 
@@ -13,7 +14,7 @@ sudo mysql_secure_installation
 
 # Config firewall.
 read -p "Dou you want to make MySQL accessable from outside the server? (firewall) (y|n): " is_firewall
-if [[ $is_firewall == "y" ]]; then
+if [[ $is_firewall != null && $is_firewall == "y" ]]; then
     sudo ufw allow "mysql"
     sudo ufw relaod
     echo "Done with firewall configuration"
