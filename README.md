@@ -5,36 +5,43 @@ See in the General section how to use the Setup Wizard.
 ## Available Services
 
 ### User Welcome
-- *optional:* welcome banner on user login
-- *optional:* greeting text on user login (depending on daytime)
+- Greeting text on user login (depending on daytime)
+- Welcome banner on user login
+```txt
+__        __   _                                
+\ \      / /__| | ___ ___  _ __ ___   ___  
+ \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+  \ V  V /  __/ | (_| (_) | | | | | |  __/
+   \_/\_/ \___|_|\___\___/|_| |_| |_|\___|
+```
 
 ### Change Static IP
-- change static ip-v4 address in the netplan.yaml file
+- Change static ip-v4 address in the netplan.yaml file
 
 ### Logging
 #### Performane
-- setup cronjob to log cpu- and ram-usage every minute
-  - every day a new file
-  - log critical usages in a separate file
-- setup cronjob to delete old log files every day
+- Setup cronjob to log cpu- and ram-usage every minute
+  - Every day a new file
+  - Log critical usages in a separate file
+- Setup cronjob to delete old log files every day
 
-### LAMP-Services
+### LAMP-Stack-Services
 #### Apache
-- install `apache2`
-- firewall configs
-- *optional:* create subdomain + default website
+- Install `apache2`
+- Firewall configs
+- *Optional:* Create subdomain + default website
 
 #### MySQL
-- install `mysql-server`
-- manually configure MySQL
+- Install `mysql-server`
+- Manually configure MySQL
    - ip, ports, safety
-- *optional:* firewall configs
-- *optional:* create MySQL database and table
-- *optional:* create MySQL user
+- *Optional:* Firewall configs
+- *Optional:* Create MySQL database and table
+- *Optional:* Create MySQL user
 
 #### PHP
-- install `php`, `libapache2-mod-php` `php-mysql`
-- print installed php version
+- Install `php`, `libapache2-mod-php` `php-mysql`
+- Print installed php version
 
 
 ## General
