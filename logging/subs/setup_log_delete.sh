@@ -8,4 +8,5 @@ sudo cp subs/log_delete.sh /usr/local/sbin/log_delete.sh
 sudo chmod +x /usr/local/sbin/log_delete.sh
 
 # Setup Cronjob at 02:00:00 every day
-echo "* 2 * * * root /usr/local/sbin/log_delete.sh" >> /etc/cron.d/log_delete $delete_days > /dev/null
+bash subs/setup_cronjob_delete.sh "* 2 * * *" $delete_days
+# echo "* 2 * * * root /usr/local/sbin/log_delete.sh" >> /etc/cron.d/log_delete $delete_days > /dev/null

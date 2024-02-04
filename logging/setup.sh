@@ -8,6 +8,6 @@ fi
 read -p "Delete old log files after X days. X: " delete_days
 
 bash subs/setup_log_delete.sh delete_days
-bash subs/setup_performance.sh
+bash subs/setup_performance.sh "* * * * *"
 
 echo "Setup Finished" 
