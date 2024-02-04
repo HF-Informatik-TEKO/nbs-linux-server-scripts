@@ -1,6 +1,7 @@
 #!/bin/bash
 subdomain=$1
 
+# Replace subdomain, if exists
 if [ -d "/var/www/$subdomain" ]; then
     read -p "The is already an existing subdomain named '$subdomain'. Would you like to overwrite it? (y|n): " is_overwrite
     if [[ $is_overwrite == null || $is_overwrite != "y" ]]; then

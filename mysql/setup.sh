@@ -1,9 +1,10 @@
 #!/bin/bash
-# Install MySQL and make configurations.
 read -p "Do you really want to install MySQL-Server and run the setup? (y|n): " is_process
 if [[ $is_process == null || $is_process != "y" ]]; then
 	exit 0
 fi
+
+# Install MySQL and make configurations.
 bash subs/install.sh
 
 # Create database.

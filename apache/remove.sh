@@ -22,3 +22,5 @@ sudo apt autoremove
 # Remove configs and websites
 sudo rm -rf /etc/apache2
 sudo rm -rf /var/www
+
+echo "Remove Finished."

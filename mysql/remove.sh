@@ -21,3 +21,5 @@ sudo apt autoremove
 
 # Remove remaining files
 sudo rm -rf /var/lib/mysql
+
+echo "Remove Finished."

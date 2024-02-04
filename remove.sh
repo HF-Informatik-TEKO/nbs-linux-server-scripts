@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "Welcome to the ubuntu-server remove wizard."
-echo "You can use flags to select multiple choices. (All = 63, LAMP = 14)"
+echo "You can use flags to select multiple choices. (All = 31, LAMP = 7)"
 echo "What do you want to do?"
-echo " 2: remove webserver apache2"
-echo " 4: Remove database mysql-server"
-echo " 8: Remove language php"
-echo "16: Remove scripts to welcome users"
-echo "32: Remove logging"
+echo " 1: Remove webserver apache2"
+echo " 2: Remove database mysql-server"
+echo " 4: Remove language php"
+echo " 8: Remove scripts to welcome users"
+echo "16: Remove logging"
 read -p "Flag: " is_process
 
 # Abort on null or no number
@@ -17,31 +17,31 @@ if [[ -z $is_process || !$is_process =~ ^[0-9]+$ ]]; then
 fi
 
 # Remove apache2
-if (($is_process & 2)); then
+if (($is_process & 1)); then
     cd apache
 	bash remove.sh
     cd ..
 fi
 # Remove mysql
-if (($is_process & 4)); then
+if (($is_process & 2)); then
     cd mysql
 	bash remove.sh
     cd ..
 fi
 # Remove php
-if (($is_process & 8)); then
+if (($is_process & 4)); then
     cd php
 	bash remove.sh
     cd ..
 fi
 # Remove welcome scripts
-if (($is_process & 16)); then
+if (($is_process & 8)); then
     cd welcome
 	bash remove.sh
     cd ..
 fi
 # Remove logging
-if (($is_process & 32)); then
+if (($is_process & 16)); then
     cd logging
 	bash remove.sh
     cd ..

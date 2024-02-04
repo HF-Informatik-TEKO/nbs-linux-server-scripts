@@ -1,6 +1,5 @@
 #!/bin/bash
-
-read -p "New process interval (* * * * *): " interval_process
+read -p "New performance logging interval (* * * * *): " interval_process
 
 # Check on null input
 if [[ ! -z "$interval_process" ]]; then

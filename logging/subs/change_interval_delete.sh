@@ -1,5 +1,4 @@
 #!/bin/bash
-
 read -p "New delete interval: (* * * * *) " interval_delete
 read -p "New delete logs after X days: (30) " interval_days
 

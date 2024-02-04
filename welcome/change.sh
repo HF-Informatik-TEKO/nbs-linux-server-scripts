@@ -14,4 +14,4 @@ if (($is_process & 1)); then
     bash subs/change_welcome_banner.sh
 fi
 
-echo "Setup Finished"
+echo "Change Finished"

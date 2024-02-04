@@ -6,3 +6,5 @@ fi
 
 # Remove PHP
 sudo apt purge php libapache2-mod-php php-mysql -y
+
+echo "Remove Finished" 

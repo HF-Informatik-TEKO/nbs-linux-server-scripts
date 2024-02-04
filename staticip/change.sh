@@ -5,6 +5,7 @@ if [[ $is_process == null || $is_process != "y" ]]; then
 	exit 0
 fi
 
+# Change static ip
 bash subs/change_ip.sh
 
-echo "Setup Finished" 
+echo "Change Finished" 

@@ -6,5 +6,8 @@ fi
 
 # Remove performance log
 bash subs/remove_performance.sh
+
 # Remove log delete
 bash subs/remove_log_delete.sh
+
+echo "Remove Finished."

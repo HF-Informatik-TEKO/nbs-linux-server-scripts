@@ -1,9 +1,10 @@
 #!/bin/bash
-# Install Apache and make configurations.
 read -p "Do you really want to install Apache-Webserver and run the setup? (y|n): " is_process
 if [[ $is_process == null || $is_process != "y" ]]; then
 	exit 0
 fi
+
+# Install Apache and make configurations.
 bash subs/install.sh
 
 # Subdomain
