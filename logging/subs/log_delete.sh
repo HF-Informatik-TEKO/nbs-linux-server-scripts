@@ -5,4 +5,4 @@ delete_days=$1
 days_ago=$(date -d "$delete_days days ago" +%Y-%m-%d)
 
 # Delete files older than X days
-find "/var/log/performance/" -type f -name "*.log" ! -newermt "$days_ago" -delete
+sudo find "/var/log/performance/" -type f -name "*.log" ! -newermt "$days_ago" -delete

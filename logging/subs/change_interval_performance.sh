@@ -5,7 +5,6 @@ read -p "New process interval (* * * * *): " interval_process
 # Check on null input
 if [[ ! -z "$interval_process" ]]; then
     # Change cronjob
-    # bash subs/remove_cronjob_performance.sh
     bash subs/setup_cronjob_performance.sh "$interval_process"
     echo "Changed log interval"
 else    
