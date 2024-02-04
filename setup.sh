@@ -2,7 +2,6 @@
 echo "Welcome to the ubuntu-server setup wizard."
 echo "You can use flags to select multiple choices. (All = 63, LAMP = 14)"
 echo "What do you want to do?"
-echo " 1: Change ip-address (static) on current config"
 echo " 2: Setup webserver apache2"
 echo " 4: Setup database mysql-server"
 echo " 8: Setup language php"
@@ -17,12 +16,6 @@ if [[ -z $is_process || !$is_process =~ ^[0-9]+$ ]]; then
     exit 0;
 fi
 
-# Change ip-address
-if (($is_process & 1)); then
-    cd staticip
-	bash setup.sh
-    cd ..
-fi
 # Setup apache2
 if (($is_process & 2)); then
     cd apache
