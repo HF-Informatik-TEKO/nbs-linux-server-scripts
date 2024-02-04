@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "What do you want to change about logging?"
-echo "1. see logs"
-echo "2. change log interval"
-echo "4. change delete interval"
+echo "1. See logs"
+echo "2. Change log interval"
+echo "4. Change delete interval"
 read -p "Flag: " is_process
 
 # Abort on null or no number
