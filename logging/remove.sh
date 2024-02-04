@@ -4,5 +4,7 @@ if [[ $is_remove == null || $is_remove != "y" ]]; then
     exit 0
 fi
 
-bash subs/remove_log_delete.sh
+# Remove performance log
 bash subs/remove_performance.sh
+# Remove log delete
+bash subs/remove_log_delete.sh

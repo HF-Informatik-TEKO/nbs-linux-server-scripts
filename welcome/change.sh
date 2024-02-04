@@ -1,7 +1,6 @@
 #!/bin/bash
-echo "What welcome script do you want to install?"
-echo "1. greet user"
-echo "2. welcome banner"
+echo "What do you want to change about the welcome scripts?"
+echo "1. Welcome banner"
 read -p "Flag: " is_process
 
 # Abort on null or no number
@@ -10,12 +9,9 @@ if [[ -z $is_process || !$is_process =~ ^[0-9]+$ ]]; then
     exit 0;
 fi
 
+# Welcome banner
 if (($is_process & 1)); then
-	bash subs/setup_greeting.sh
-fi
-
-if (($is_process & 2)); then
-	bash subs/setup_welcome.sh
+    bash subs/change_welcome_banner.sh
 fi
 
 echo "Setup Finished"
