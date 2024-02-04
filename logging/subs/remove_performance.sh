@@ -10,4 +10,3 @@ sudo rm /usr/local/sbin/performance_logging.sh
 
 # Remove Cronjob
 bash subs/remove_cronjob_performance.sh
-# sudo rm /etc/cron.d/performance_logging

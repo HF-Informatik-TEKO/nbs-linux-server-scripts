@@ -1,5 +1,7 @@
 #!/bin/bash
+# Check existence of log folder
 if [ -d "/var/log/performance/" ]; then
+    # Navigate an show content of log folder
     cd /var/log/performance/
     ls
 else

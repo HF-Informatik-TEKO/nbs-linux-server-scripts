@@ -2,7 +2,7 @@
 echo "What do you want to change about logging?"
 echo "1. see logs"
 echo "2. change log interval"
-echo "3. change delete interval"
+echo "4. change delete interval"
 read -p "Flag: " is_process
 
 # Abort on null or no number

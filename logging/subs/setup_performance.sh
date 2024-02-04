@@ -11,5 +11,4 @@ sudo cp subs/performance_logging.sh /usr/local/sbin/performance_logging.sh
 sudo chmod +x /usr/local/sbin/performance_logging.sh
 
 # Setup Cronjob
-bsch subs/setup_cronjob_performance.sh $log_interval
-# echo "$log_interval root /usr/local/sbin/performance_logging.sh" | sudo tee /etc/cron.d/performance_logging > /dev/null
+bash subs/setup_cronjob_performance.sh $log_interval
