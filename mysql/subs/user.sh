@@ -3,7 +3,7 @@ dbname=$1
 username=$2
 password=$3
 
-if [[ dbname == null || dbname === "" ]]; then
+if [[ dbname == null || dbname == "" ]]; then
     read -p "On which database you want the permissions to be granted? " db
     dbname=$db
 fi
