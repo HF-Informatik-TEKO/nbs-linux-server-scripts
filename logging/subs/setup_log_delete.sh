@@ -1,5 +1,5 @@
 #!/bin/bash
-$interval_delete=$1
+interval_delete=$1
 delete_days=$2
 
 # Copy script
