@@ -1,6 +1,8 @@
-# Linux Ubuntu Setup Wizard
+# Linux Ubuntu Setup Wizard  
 This is a collection of scripts to automate several tasks on your Linux Ubuntu Server.  
 See in the General section how to use the Setup Wizard.
+
+<img src="NBS_Project_Setup_Wizard_Logo.png" alt="Image" height="100">
 
 ## Available Services
 
